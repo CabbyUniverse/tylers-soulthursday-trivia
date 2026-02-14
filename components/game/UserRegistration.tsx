@@ -34,7 +34,7 @@ export function UserRegistration({ onComplete }: UserRegistrationProps) {
       </Text>
 
       <View style={styles.form}>
-        <Text style={styles.label}>Username (not email)</Text>
+        <Text style={styles.label}>Username for Leaderboard (not email)</Text>
         <TextInput
           style={styles.input}
           placeholder="Enter your name (e.g., John Smith)"
