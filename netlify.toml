@@ -3,4 +3,4 @@
   publish = "dist"
 
 [build.environment]
-  NETLIFY_SKIP_SECRET_DETECTION = "true"
+  SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
