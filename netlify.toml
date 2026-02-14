@@ -1,0 +1,9 @@
+[[build.environment]]
+  EXPO_PUBLIC_FIREBASE_API_KEY = "AIzaSyCrMkDvKMyS6GGWzdIBfI550ZOIQ3yqazE"
+
+[build]
+  command = "npx expo export --platform web"
+  publish = "dist"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
