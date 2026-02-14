@@ -14,6 +14,10 @@ export function UserRegistration({ onComplete }: UserRegistrationProps) {
       Alert.alert('Error', 'Please enter a username');
       return;
     }
+    if (username.includes('@')) {
+      Alert.alert('Error', 'Username cannot be an email address. Please enter just your name.');
+      return;
+    }
     if (!email.trim() || !email.includes('@')) {
       Alert.alert('Error', 'Please enter a valid email address');
       return;
@@ -30,10 +34,10 @@ export function UserRegistration({ onComplete }: UserRegistrationProps) {
       </Text>
 
       <View style={styles.form}>
-        <Text style={styles.label}>Username</Text>
+        <Text style={styles.label}>Username (not email)</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter your username"
+          placeholder="Enter your name (e.g., John Smith)"
           value={username}
           onChangeText={setUsername}
           autoCapitalize="words"
