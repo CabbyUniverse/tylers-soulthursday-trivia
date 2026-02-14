@@ -236,8 +236,7 @@ export default function GameScreen() {
         
         <View style={styles.scoreCard}>
           <View>
-            <Text style={styles.scoreText}>{gameState.score}</Text>
-            <Text style={styles.label}>Score</Text>
+            <Text style={styles.label}>Question {gameState.currentQuestionIndex + 1} of {questions.length}</Text>
           </View>
           <View style={styles.divider} />
           <View>
